@@ -24,6 +24,6 @@
   3) Explain shallow copy and deep copy in Python
   4) Write a Python function to calculate precision and recall
 
-  🔹 5. Project Discussion (Most Important for Interviews)
+  🔹 5. Project Discussion
   
   1) Explain your project in detail
