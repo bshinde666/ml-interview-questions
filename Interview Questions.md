@@ -7,23 +7,23 @@
 
   🔹 2. Core Machine Learning Concepts
   
-  What is bias-variance tradeoff?
-  What is regularization?
-  What are the accuracy metrics used for classification problems?
-  Explain precision and recall
-  Explain how to control precision and recall
+  1) What is bias-variance tradeoff?
+  2) What is regularization?
+  3) What are the accuracy metrics used for classification problems?
+  4) Explain precision and recall
+  5) Explain how to control precision and recall
 
   🔹 3. SQL Concepts
   
-  Difference between WHERE and HAVING clause
+  1) Difference between WHERE and HAVING clause
 
   🔹 4. Python Fundamentals
   
-  Difference between list and array
-  What is list comprehension?
-  Explain shallow copy and deep copy in Python
-  Write a Python function to calculate precision and recall
+  1) Difference between list and array
+  2) What is list comprehension?
+  3) Explain shallow copy and deep copy in Python
+  4) Write a Python function to calculate precision and recall
 
   🔹 5. Project Discussion (Most Important for Interviews)
   
-  Explain your project in detail
+  1) Explain your project in detail
