@@ -1,4 +1,4 @@
-**Data Scientist / Machine Learning Interview Questions**
+**Data Scientist / Machine Learning Interview/Assesment Questions**
 -
 
 Hey All, I've documented the questions asked in multiple interviews I attended in my job search journey. Attending multiple interviews gave me insights about the pattern of questions we can expect for 3–5 years of Data Science / ML experience. You may see multiple frequent questions here.
