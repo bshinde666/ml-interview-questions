@@ -1,5 +1,15 @@
-1) for df.groupby('g')['x'].agg(['mean','max']) what is produced ?
+**Question:**
+For df.groupby('g')['x'].agg(['mean','max']) what is produced ?
 -- Dataframe with 'mean' and 'max' columns indexed by 'g'
 -- Three-level Multiindex series 
 -- Raises TypeError
 -- Single series with mean values 
+
+**Question:**
+What does `df['col'].isna().sum()` compute?
+
+**Options:**
+* **A** Total unique values in col
+* **B** Number of non-null values in col
+* **C** Positions of NaNs
+* **D** Number of null/NaN values in col
