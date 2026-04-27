@@ -25,3 +25,11 @@ mean > median > mode --> right skewed data
 
 mean < median < mode --> left skewed data 
 <img width="786" height="481" alt="image" src="https://github.com/user-attachments/assets/3baba16b-ade1-4e42-925f-1e95a12179ea" />
+
+
+
+sort the list without using built-in method 
+reverse the string / list with out using built-in method 
+find the duplicate present in the list 
+find the how / vowels present in the string 
+flatten the nested lists
