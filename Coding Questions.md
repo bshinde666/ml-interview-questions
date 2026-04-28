@@ -1,4 +1,6 @@
-- sort the list without using built-in method 
+- sort the list without using built-in method
+- <img width="1539" height="453" alt="image" src="https://github.com/user-attachments/assets/1d8abdab-c066-44c7-b85b-d86923502b7d" />
+
 - reverse the string / list with out using built-in method
   <img width="680" height="196" alt="image" src="https://github.com/user-attachments/assets/68e2caf4-facd-4a83-97ef-da5917f80864" />
 
