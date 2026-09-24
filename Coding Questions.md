@@ -10,3 +10,15 @@
 - create a 2d matrix and then add those matrix
   <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/a09ca932-fa3e-4700-ae00-0fb8adbc8904" />
 
+
+
+def is_palindrome(text):
+    # Convert to string just in case a number is passed
+    text = str(text) 
+    return text == text[::-1]
+
+print(is_palindrome("racecar"))  # True
+print(is_palindrome("python"))   # False
+print(is_palindrome(12321))      # True
+
+
