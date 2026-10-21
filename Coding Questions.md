@@ -1,12 +1,128 @@
-- sort the list without using built-in method
-- <img width="1539" height="453" alt="image" src="https://github.com/user-attachments/assets/1d8abdab-c066-44c7-b85b-d86923502b7d" />
+# Python Coding Practice — More Problems
 
-- reverse the string / list with out using built-in method
-  <img width="680" height="196" alt="image" src="https://github.com/user-attachments/assets/68e2caf4-facd-4a83-97ef-da5917f80864" />
+## 5. Sort a List Without Using Built-in Methods
 
-- find the duplicate present in the list 
-- find the how / vowels present in the string 
-- flatten the nested lists
+Use the **Bubble Sort** algorithm to sort a list in ascending order.
+
+```python
+dummy_list = [11, 33, 55, 78, 89, 156, 102]
+
+n = len(dummy_list)
+
+for i in range(n):
+    for j in range(n - i - 1):
+        if dummy_list[j] > dummy_list[j + 1]:
+            dummy_list[j], dummy_list[j + 1] = (
+                dummy_list[j + 1],
+                dummy_list[j]
+            )
+
+print(dummy_list)
+```
+
+**Output:**
+```text
+[11, 33, 55, 78, 89, 102, 156]
+```
+
+**Key concept:** Compare adjacent elements and swap them if they are in the wrong order.
+
+---
+
+## 6. Reverse a String Without Using Built-in Methods
+
+Reverse a string by iterating through its characters.
+
+```python
+dummy_string = "ask me any question"
+support_string = ""
+
+for char in dummy_string:
+    support_string = char + support_string
+
+print(support_string)
+```
+
+**Output:**
+```text
+noitseuq yna em ksa
+```
+
+**Key concept:** Add each new character to the beginning of the result string.
+
+---
+
+## 7. Find Duplicate Elements in a List
+
+Find the elements that appear more than once in a list.
+
+```python
+numbers = [1, 2, 3, 2, 4, 5, 3, 6]
+duplicates = []
+
+for i in range(len(numbers)):
+    for j in range(i + 1, len(numbers)):
+        if numbers[i] == numbers[j] and numbers[i] not in duplicates:
+            duplicates.append(numbers[i])
+
+print(duplicates)
+```
+
+**Output:**
+```text
+[2, 3]
+```
+
+**Key concept:** Compare each element with the elements that come after it.
+
+---
+
+## 8. Count Vowels in a String
+
+Count how many vowels (`a`, `e`, `i`, `o`, `u`) are present in a string.
+
+```python
+text = "Hello World"
+vowels = "aeiou"
+count = 0
+
+for char in text.lower():
+    if char in vowels:
+        count += 1
+
+print(count)
+```
+
+**Output:**
+```text
+3
+```
+
+**Key concept:** Check each character against the vowels and increase the count when a match is found.
+
+---
+
+## 9. Flatten a Nested List
+
+Convert a list containing nested lists into a single flat list.
+
+```python
+nested_list = [[1, 2], [3, 4], [5, 6]]
+flat_list = []
+
+for sublist in nested_list:
+    for item in sublist:
+        flat_list.append(item)
+
+print(flat_list)
+```
+
+**Output:**
+```text
+[1, 2, 3, 4, 5, 6]
+```
+
+**Key
 - create a 2d matrix and then add those matrix
   <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/a09ca932-fa3e-4700-ae00-0fb8adbc8904" />
 
