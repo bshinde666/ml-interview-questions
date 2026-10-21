@@ -22,3 +22,20 @@ print(is_palindrome("python"))   # False
 print(is_palindrome(12321))      # True
 
 
+
+l1 = [1,3,5,9]
+l2 = [9,2,4,3]
+output = [3,9]
+for i in l1:
+	if i in l2:
+		print(x)
+set(l1).intersection(set(l2))
+
+
+a = [1,2,3]
+n = [2,3,5]
+print(a+n)
+
+
+square the even elements = [i*i for i in range(10) i % 2 == 0]
+
