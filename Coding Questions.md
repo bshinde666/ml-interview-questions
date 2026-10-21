@@ -305,6 +305,87 @@ Result:
 3   5
 7  11
 ```
+11. [Find Pairs of Songs Whose Durations Add Up to a Target](#11-find-pairs-of-songs-whose-durations-add-up-to-a-target)
+12. [Generate the Fibonacci Series](#12-generate-the-fibonacci-series)
+
+---
+
+## 11. Find Pairs of Songs Whose Durations Add Up to a Target
+
+Find pairs of songs whose durations add up to 9 minutes.
+
+```python
+songs = [
+    ("Song A", 7),
+    ("Song B", 3),
+    ("Song C", 9),
+    ("Song D", 2),
+    ("Song E", 6),
+    ("Song F", 4),
+    ("Song G", 8),
+    ("Song H", 1),
+    ("Song I", 5),
+    ("Song J", 10)
+]
+
+for i in range(len(songs)):
+    for j in range(i + 1, len(songs)):
+        if songs[i][1] + songs[j][1] == 9:
+            print(songs[i], songs[j])
+```
+
+**Output:**
+```text
+('Song A', 7) ('Song D', 2)
+('Song A', 7) ('Song H', 1)
+('Song B', 3) ('Song G', 8)
+('Song B', 3) ('Song I', 5)
+('Song C', 9) ('Song H', 1)
+('Song D', 2) ('Song E', 6)
+('Song D', 2) ('Song I', 5)
+('Song E', 6) ('Song F', 4)
+('Song F', 4) ('Song H', 1)
+('Song H', 1) ('Song J', 10)
+```
+
+**Key concepts:**
+- `songs[i][1]` accesses the duration of the first song.
+- `songs[j][1]` accesses the duration of the second song.
+- The condition checks whether their total duration is 9.
+- `range(i + 1, len(songs))` avoids comparing a song with itself and prevents duplicate pairs.
+- Nested loops compare each unique pair of songs.
+
+---
+
+## 12. Generate the Fibonacci Series
+
+Generate the first 10 numbers of the Fibonacci series.
+
+In this series, each number is the sum of the previous two numbers.
+
+```python
+n = 10
+
+a = 0
+b = 1
+
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+```
+
+**Output:**
+```text
+0 1 1 2 3 5 8 13 21 34
+```
+
+**Key concepts:**
+- `a = 0` and `b = 1` initialize the first two numbers.
+- `print(a, end=" ")` prints the current number on the same line.
+- `a, b = b, a + b` updates both variables to generate the next number.
+- `range(n)` repeats the process 10 times.
+
+**Remember:** Print the current number, update both variables, and repeat.
 
 **Key concepts:**
 - A 2D list represents a matrix in Python.
@@ -329,3 +410,5 @@ Result:
 | 8 | Count vowels | Conditions and loops |
 | 9 | Flatten a nested list | Nested loops |
 | 10 | Add two matrices | 2D lists and nested loops |
+| 11 | Song duration pairs | Nested loops and tuple indexing |
+| 12 | Fibonacci series | Loops and variable updates |
