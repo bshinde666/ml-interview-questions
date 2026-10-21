@@ -14,6 +14,8 @@ A collection of common Python coding interview questions, solutions, outputs, an
 8. [Count Vowels in a String](#8-count-vowels-in-a-string)
 9. [Flatten a Nested List](#9-flatten-a-nested-list)
 10. [Add Two 2D Matrices](#10-add-two-2d-matrices)
+11. [Find Pairs of Songs Whose Durations Add Up to a Target](#11-find-pairs-of-songs-whose-durations-add-up-to-a-target)
+12. [Generate the Fibonacci Series](#12-generate-the-fibonacci-series)
 
 ---
 
@@ -33,6 +35,7 @@ print(is_palindrome(12321))      # True
 ```
 
 **Output:**
+
 ```text
 True
 False
@@ -59,6 +62,7 @@ for i in l1:
 ```
 
 **Output:**
+
 ```text
 3
 9
@@ -74,7 +78,8 @@ result = set(l1).intersection(set(l2))
 print(result)
 ```
 
-**Output:**
+**Possible output:**
+
 ```text
 {3, 9}
 ```
@@ -95,6 +100,7 @@ print(a + n)
 ```
 
 **Output:**
+
 ```text
 [1, 2, 3, 2, 3, 5]
 ```
@@ -114,11 +120,13 @@ print(squares)
 ```
 
 **Output:**
+
 ```text
 [0, 4, 16, 36, 64]
 ```
 
 **Key concepts:**
+
 - `range(10)` generates numbers from 0 to 9.
 - `i % 2 == 0` checks whether a number is even.
 - `i * i` calculates the square of a number.
@@ -147,6 +155,7 @@ print(dummy_list)
 ```
 
 **Output:**
+
 ```text
 [11, 33, 55, 78, 89, 102, 156]
 ```
@@ -170,6 +179,7 @@ print(support_string)
 ```
 
 **Output:**
+
 ```text
 noitseuq yna em ksa
 ```
@@ -195,6 +205,7 @@ print(duplicates)
 ```
 
 **Output:**
+
 ```text
 [2, 3]
 ```
@@ -220,6 +231,7 @@ print(count)
 ```
 
 **Output:**
+
 ```text
 3
 ```
@@ -244,13 +256,14 @@ print(flat_list)
 ```
 
 **Output:**
+
 ```text
 [1, 2, 3, 4, 5, 6]
 ```
 
 **Key concept:** Use a nested loop to access each element and append it to a new list.
 
-Note: This example handles a list nested one level deep.
+**Note:** This example handles a list nested one level deep.
 
 ---
 
@@ -277,6 +290,7 @@ print(add(a, b))
 ```
 
 **Output:**
+
 ```text
 [[3, 5], [7, 11]]
 ```
@@ -284,12 +298,14 @@ print(add(a, b))
 ### Explanation
 
 Matrix A:
+
 ```text
 1  2
 3  4
 ```
 
 Matrix B:
+
 ```text
 2  3
 4  7
@@ -301,12 +317,19 @@ Add the elements at the same positions:
 - Second row: `3 + 4 = 7` and `4 + 7 = 11`
 
 Result:
+
 ```text
-3   5
-7  11
+3  5
+7 11
 ```
-11. [Find Pairs of Songs Whose Durations Add Up to a Target](#11-find-pairs-of-songs-whose-durations-add-up-to-a-target)
-12. [Generate the Fibonacci Series](#12-generate-the-fibonacci-series)
+
+**Key concepts:**
+
+- A 2D list represents a matrix in Python.
+- The outer loop (`i`) iterates through the rows.
+- The inner loop (`j`) iterates through the columns.
+- `result[i][j] = a[i][j] + b[i][j]` adds the corresponding elements.
+- Both matrices must have the same dimensions for element-wise addition.
 
 ---
 
@@ -335,20 +358,17 @@ for i in range(len(songs)):
 ```
 
 **Output:**
+
 ```text
 ('Song A', 7) ('Song D', 2)
 ('Song A', 7) ('Song H', 1)
-('Song B', 3) ('Song G', 8)
-('Song B', 3) ('Song I', 5)
-('Song C', 9) ('Song H', 1)
-('Song D', 2) ('Song E', 6)
-('Song D', 2) ('Song I', 5)
-('Song E', 6) ('Song F', 4)
-('Song F', 4) ('Song H', 1)
-('Song H', 1) ('Song J', 10)
+('Song B', 3) ('Song E', 6)
+('Song F', 4) ('Song I', 5)
+('Song G', 8) ('Song H', 1)
 ```
 
 **Key concepts:**
+
 - `songs[i][1]` accesses the duration of the first song.
 - `songs[j][1]` accesses the duration of the second song.
 - The condition checks whether their total duration is 9.
@@ -375,24 +395,19 @@ for i in range(n):
 ```
 
 **Output:**
+
 ```text
 0 1 1 2 3 5 8 13 21 34
 ```
 
 **Key concepts:**
+
 - `a = 0` and `b = 1` initialize the first two numbers.
 - `print(a, end=" ")` prints the current number on the same line.
 - `a, b = b, a + b` updates both variables to generate the next number.
 - `range(n)` repeats the process 10 times.
 
 **Remember:** Print the current number, update both variables, and repeat.
-
-**Key concepts:**
-- A 2D list represents a matrix in Python.
-- The outer loop (`i`) iterates through the rows.
-- The inner loop (`j`) iterates through the columns.
-- `result[i][j] = a[i][j] + b[i][j]` adds the corresponding elements.
-- Both matrices must have the same dimensions for element-wise addition.
 
 ---
 
@@ -412,3 +427,4 @@ for i in range(n):
 | 10 | Add two matrices | 2D lists and nested loops |
 | 11 | Song duration pairs | Nested loops and tuple indexing |
 | 12 | Fibonacci series | Loops and variable updates |
+
